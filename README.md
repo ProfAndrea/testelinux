@@ -7,18 +7,14 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b3
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
-php composer-setup.php
-All settings correct for using Composer
-Downloading...
-
-
 Composer (version 2.7.7) successfully installed to: /tmp/guest-5ovg4t/Documentos/laravel/testelinux/testelinux/composer.phar
 Use it: php composer.phar
 
 
-> ls
+# > ls
 composer.phar  README.md
->php composer.phar
+# Help do composer
+>php composer.phar<br>
    ______
   / ____/___  ____ ___  ____  ____  ________  _____
  / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
@@ -78,12 +74,14 @@ Available commands:
   suggests             Shows package suggestions
   update               [u|upgrade] Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file
   validate             Validates a composer.json and composer.lock
-> php composer.phar -V
-Composer version 2.7.7 2024-06-10 22:11:12
-PHP version 7.4.3-4ubuntu2.20 (/usr/bin/php7.4)
-Run the "diagnose" command to get more detailed diagnostics output.
 
->php composer.phar create-project laravel/laravel teste
+# Ver a versão do composer instalado 
+> php composer.phar -V<br>
+Composer version 2.7.7 2024-06-10 22:11:12<br>
+PHP version 7.4.3-4ubuntu2.20 (/usr/bin/php7.4)<br>
+Run the "diagnose" command to get more detailed diagnostics output.<br>
+
+# >php composer.phar create-project laravel/laravel teste
 Creating a "laravel/laravel" project at "./teste"
 Cannot use laravel/laravel's latest version v11.1.1 as it requires php ^8.2 which is not satisfied by your platform.
 Installing laravel/laravel (v8.6.12)
