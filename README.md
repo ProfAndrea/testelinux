@@ -14,17 +14,17 @@ Use it: php composer.phar
 # > ls
 composer.phar  README.md
 # Help do composer
->php composer.phar<br>
+>php composer.phar <br>
    ______
   / ____/___  ____ ___  ____  ____  ________  _____
  / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
 / /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
 \____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
                     /_/
-Composer version 2.7.7 2024-06-10 22:11:12
+Composer version 2.7.7 2024-06-10 22:11:12<br>
 
 Usage:
-  command [options] [arguments]
+  command [options] [arguments]<br>
 
 Options:
   -h, --help                     Display help for the given command. When no command is given display help for the list command
@@ -38,7 +38,7 @@ Options:
   -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
       --no-cache                 Prevent use of the cache
   -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-
+<br>
 Available commands:
   about                Shows a short information about Composer
   archive              Creates an archive of this composer package
@@ -76,26 +76,26 @@ Available commands:
   validate             Validates a composer.json and composer.lock
 
 # Ver a versão do composer instalado 
-> php composer.phar -V<br>
+> php composer.phar -V<br><br>
 Composer version 2.7.7 2024-06-10 22:11:12<br>
 PHP version 7.4.3-4ubuntu2.20 (/usr/bin/php7.4)<br>
 Run the "diagnose" command to get more detailed diagnostics output.<br>
 
-# >php composer.phar create-project laravel/laravel teste
+# Criar um projeto laravel
+>php composer.phar create-project laravel/laravel nomeProjeto<br>
 Creating a "laravel/laravel" project at "./teste"
-Cannot use laravel/laravel's latest version v11.1.1 as it requires php ^8.2 which is not satisfied by your platform.
+Cannot use laravel/laravel's latest version v11.1.1 as it requires php ^8.2 which is not satisfied by your platform.<br>
 Installing laravel/laravel (v8.6.12)
   - Downloading laravel/laravel (v8.6.12)
   - Installing laravel/laravel (v8.6.12): Extracting archive
 Created project in /tmp/guest-5ovg4t/Documentos/laravel/testelinux/testelinux/teste
 > @php -r "file_exists('.env') || copy('.env.example', '.env');"
-Loading composer repositories with package information
+Loading composer repositories with package information<br>
 
+# habilitar o servidor
 
-guest-5ovg4t@e41588894-ed6874:~/Documentos/laravel/testelinux/testelinux$ cd teste
-guest-5ovg4t@e41588894-ed6874:~/Documentos/laravel/testelinux/testelinux/teste$ php artian serve
-Could not open input file: artian
-guest-5ovg4t@e41588894-ed6874:~/Documentos/laravel/testelinux/testelinux/teste$ php artisan serve
+>cd teste<br>
+>php artisan serve<br>
 Starting Laravel development server: http://127.0.0.1:8000
 [Thu Jun 13 19:37:19 2024] PHP 7.4.3-4ubuntu2.20 Development Server (http://127.0.0.1:8000) started
 [Thu Jun 13 19:37:58 2024] 127.0.0.1:35964 Accepted
@@ -103,6 +103,4 @@ Starting Laravel development server: http://127.0.0.1:8000
 [Thu Jun 13 19:37:59 2024] 127.0.0.1:35976 Accepted
 [Thu Jun 13 19:37:59 2024] 127.0.0.1:35976 [200]: GET /favicon.ico
 [Thu Jun 13 19:37:59 2024] 127.0.0.1:35976 Closing
-^C
-guest-5ovg4t@e41588894-ed6874:~/Documentos/laravel/testelinux/testelinux/teste$ ^C
-guest-5ovg4t@e41588894-ed6874:~/Documentos/laravel/testelinux/testelinux/teste$ 
+
